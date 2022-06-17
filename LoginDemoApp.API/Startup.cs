@@ -1,8 +1,10 @@
 using LoginDemoApp.Business.Services;
+using LoginDemoApp.Data.DataConnection;
 using LoginDemoApp.Data.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -26,6 +28,8 @@ namespace LoginDemoApp.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            string sqlConnection = Configuration.GetConnectionString("SqlConnection");
+            services.AddDbContext<LoginDemoAppDbContext>(options => options.UseSqlServer(sqlConnection));
             services.AddTransient<IEmployee, Employee>();
             services.AddTransient<EmployeeService, EmployeeService>();
             services.AddControllers();

@@ -6063,11 +6063,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.API\\LoginDemoApp.API.csproj",
+      "projectUniqueName": "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.API\\LoginDemoApp.API.csproj",
       "projectName": "LoginDemoApp.API",
-      "projectPath": "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.API\\LoginDemoApp.API.csproj",
+      "projectPath": "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.API\\LoginDemoApp.API.csproj",
       "packagesPath": "C:\\Users\\VISHAL\\.nuget\\packages\\",
-      "outputPath": "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.API\\obj\\",
+      "outputPath": "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\VISHAL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6084,14 +6084,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.Business\\LoginDemoApp.Business.csproj": {
-              "projectPath": "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.Business\\LoginDemoApp.Business.csproj"
+            "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.Business\\LoginDemoApp.Business.csproj": {
+              "projectPath": "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.Business\\LoginDemoApp.Business.csproj"
             },
-            "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.Data\\LoginDemoApp.Data.csproj": {
-              "projectPath": "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.Data\\LoginDemoApp.Data.csproj"
+            "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.Data\\LoginDemoApp.Data.csproj": {
+              "projectPath": "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.Data\\LoginDemoApp.Data.csproj"
             },
-            "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\LoginDemoApp.Entity.csproj": {
-              "projectPath": "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\LoginDemoApp.Entity.csproj"
+            "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\LoginDemoApp.Entity.csproj": {
+              "projectPath": "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\LoginDemoApp.Entity.csproj"
             }
           }
         }

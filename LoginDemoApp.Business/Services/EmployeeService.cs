@@ -24,5 +24,9 @@ namespace LoginDemoApp.Business.Services
             return _employee.Login(emp);
         }
 
+        public string Register(EmployeeModel emp)
+        {
+            return _employee.Register(emp);
+        }
     }
 }

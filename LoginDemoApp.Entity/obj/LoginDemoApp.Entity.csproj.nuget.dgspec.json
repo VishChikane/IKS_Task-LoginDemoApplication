@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\LoginDemoApp.Entity.csproj": {}
+    "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\LoginDemoApp.Entity.csproj": {}
   },
   "projects": {
-    "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\LoginDemoApp.Entity.csproj": {
+    "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\LoginDemoApp.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\LoginDemoApp.Entity.csproj",
+        "projectUniqueName": "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\LoginDemoApp.Entity.csproj",
         "projectName": "LoginDemoApp.Entity",
-        "projectPath": "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\LoginDemoApp.Entity.csproj",
+        "projectPath": "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\LoginDemoApp.Entity.csproj",
         "packagesPath": "C:\\Users\\VISHAL\\.nuget\\packages\\",
-        "outputPath": "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\obj\\",
+        "outputPath": "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\VISHAL\\AppData\\Roaming\\NuGet\\NuGet.Config",

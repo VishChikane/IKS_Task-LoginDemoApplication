@@ -8890,11 +8890,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.UI\\LoginDemoApp.UI.csproj",
+      "projectUniqueName": "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.UI\\LoginDemoApp.UI.csproj",
       "projectName": "LoginDemoApp.UI",
-      "projectPath": "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.UI\\LoginDemoApp.UI.csproj",
+      "projectPath": "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.UI\\LoginDemoApp.UI.csproj",
       "packagesPath": "C:\\Users\\VISHAL\\.nuget\\packages\\",
-      "outputPath": "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.UI\\obj\\",
+      "outputPath": "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.UI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\VISHAL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8911,11 +8911,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.API\\LoginDemoApp.API.csproj": {
-              "projectPath": "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.API\\LoginDemoApp.API.csproj"
+            "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.API\\LoginDemoApp.API.csproj": {
+              "projectPath": "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.API\\LoginDemoApp.API.csproj"
             },
-            "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\LoginDemoApp.Entity.csproj": {
-              "projectPath": "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\LoginDemoApp.Entity.csproj"
+            "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\LoginDemoApp.Entity.csproj": {
+              "projectPath": "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\LoginDemoApp.Entity.csproj"
             }
           }
         }

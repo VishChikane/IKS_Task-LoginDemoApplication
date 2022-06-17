@@ -5823,11 +5823,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.Data\\LoginDemoApp.Data.csproj",
+      "projectUniqueName": "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.Data\\LoginDemoApp.Data.csproj",
       "projectName": "LoginDemoApp.Data",
-      "projectPath": "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.Data\\LoginDemoApp.Data.csproj",
+      "projectPath": "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.Data\\LoginDemoApp.Data.csproj",
       "packagesPath": "C:\\Users\\VISHAL\\.nuget\\packages\\",
-      "outputPath": "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.Data\\obj\\",
+      "outputPath": "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\VISHAL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5844,8 +5844,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\LoginDemoApp.Entity.csproj": {
-              "projectPath": "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\LoginDemoApp.Entity.csproj"
+            "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\LoginDemoApp.Entity.csproj": {
+              "projectPath": "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\LoginDemoApp.Entity.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wS61pvbWfPK7RaFH4XDl7mfovLcuY2WlVxFkNKuaftH3zS54ILbJ7K3Q2614aV2FxWm0Ox4tKQGJKBf2kRN++Q==",
+  "dgSpecHash": "YSOLoqr+FcotoZFES0L0S8/u9LpxwIpwH8/n02E9ArmUpv+biiuw04i0oOBkLfyfRezQ3akF3BrO7rb99Zm7xA==",
   "success": true,
-  "projectFilePath": "E:\\IKS_Training\\PracticeApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\LoginDemoApp.Entity.csproj",
+  "projectFilePath": "E:\\IKS_Training\\TaskApplication\\LoginDemoApplication\\LoginDemoApp.Entity\\LoginDemoApp.Entity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VISHAL\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\VISHAL\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

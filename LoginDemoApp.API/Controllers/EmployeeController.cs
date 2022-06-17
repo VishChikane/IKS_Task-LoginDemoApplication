@@ -30,5 +30,11 @@ namespace LoginDemoApp.API.Controllers
         {
             return Ok(_employeeService.Login(emp));
         }
+
+        [HttpPost("Register")]
+        public IActionResult Register(EmployeeModel emp)
+        {
+            return Ok(_employeeService.Register(emp));
+        }
     }
 }
