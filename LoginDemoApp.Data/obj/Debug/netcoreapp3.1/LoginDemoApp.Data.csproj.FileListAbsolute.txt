@@ -1,0 +1,16 @@
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Data\bin\Debug\netcoreapp3.1\LoginDemoApp.Data.deps.json
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Data\bin\Debug\netcoreapp3.1\LoginDemoApp.Data.dll
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Data\bin\Debug\netcoreapp3.1\LoginDemoApp.Data.pdb
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Data\bin\Debug\netcoreapp3.1\LoginDemoApp.Entity.dll
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Data\bin\Debug\netcoreapp3.1\LoginDemoApp.Entity.pdb
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Data\obj\Debug\netcoreapp3.1\LoginDemoApp.Data.csproj.AssemblyReference.cache
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Data\obj\Debug\netcoreapp3.1\LoginDemoApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Data\obj\Debug\netcoreapp3.1\LoginDemoApp.Data.AssemblyInfoInputs.cache
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Data\obj\Debug\netcoreapp3.1\LoginDemoApp.Data.AssemblyInfo.cs
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Data\obj\Debug\netcoreapp3.1\LoginDemoApp.Data.csproj.CoreCompileInputs.cache
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Data\obj\Debug\netcoreapp3.1\LoginDemoApp.Data.csproj.CopyComplete
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Data\obj\Debug\netcoreapp3.1\LoginDemoApp.Data.dll
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Data\obj\Debug\netcoreapp3.1\LoginDemoApp.Data.pdb
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Data\bin\Debug\netcoreapp3.1\LoginDemoApp.Data.runtimeconfig.json
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Data\bin\Debug\netcoreapp3.1\LoginDemoApp.Data.runtimeconfig.dev.json
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Data\obj\Debug\netcoreapp3.1\LoginDemoApp.Data.genruntimeconfig.cache

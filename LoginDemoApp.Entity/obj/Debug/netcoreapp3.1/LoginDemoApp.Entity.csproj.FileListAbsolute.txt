@@ -1,0 +1,12 @@
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Entity\bin\Debug\netcoreapp3.1\LoginDemoApp.Entity.deps.json
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Entity\bin\Debug\netcoreapp3.1\LoginDemoApp.Entity.dll
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Entity\bin\Debug\netcoreapp3.1\LoginDemoApp.Entity.pdb
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Entity\obj\Debug\netcoreapp3.1\LoginDemoApp.Entity.GeneratedMSBuildEditorConfig.editorconfig
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Entity\obj\Debug\netcoreapp3.1\LoginDemoApp.Entity.AssemblyInfoInputs.cache
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Entity\obj\Debug\netcoreapp3.1\LoginDemoApp.Entity.AssemblyInfo.cs
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Entity\obj\Debug\netcoreapp3.1\LoginDemoApp.Entity.csproj.CoreCompileInputs.cache
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Entity\obj\Debug\netcoreapp3.1\LoginDemoApp.Entity.dll
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Entity\obj\Debug\netcoreapp3.1\LoginDemoApp.Entity.pdb
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Entity\bin\Debug\netcoreapp3.1\LoginDemoApp.Entity.runtimeconfig.json
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Entity\bin\Debug\netcoreapp3.1\LoginDemoApp.Entity.runtimeconfig.dev.json
+E:\IKS_Training\PracticeApplication\LoginDemoApplication\LoginDemoApp.Entity\obj\Debug\netcoreapp3.1\LoginDemoApp.Entity.genruntimeconfig.cache
