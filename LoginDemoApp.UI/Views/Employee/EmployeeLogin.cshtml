@@ -3,31 +3,43 @@
     ViewData["Title"] = "EmployeeLogin";
 }
 
-<h1>Employee Login</h1>
+<div class="text-center">
+    <h3 class="display-4">Welcome To LoginDemo </h3>
+</div>
+<section class="vh-80" style="font-family:'Times New Roman', Times, serif">
+    <div class="container py-4 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                    <div class="card-body p-4 text-center">
 
-<hr />
+                        <h3 class="mb-5">Sign in</h3>
 
-<form method="post" class="border p-3 m-3 bg-light">
-    <div class="form-group">
-        <label for="Email">Email</label>
-        <input type="text" class="form-control" asp-for="Email" />
+                        <form method="post" class="">
+                            <div class="form-group">
+                                <input type="email" class="form-control" asp-for="Email" placeholder="Enter Email"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" asp-for="Password" placeholder="Enter Password"/>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                            <hr />
+                            @if (ViewBag.status == "OK")
+                            {
+                                <div class="alert alert-success">
+                                    @ViewBag.message
+                                </div>
+                            }
+                            else if (ViewBag.status == "Error")
+                            {
+                                <div class="alert alert-danger">
+                                    @ViewBag.message
+                                </div>
+                            }
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="form-group">
-        <label for="Password">Password</label>
-        <input type="text" class="form-control" asp-for="Password" />
-    </div>
-    <input type="submit" value="Login" class="btn btn-primary" />
-    <hr />
-    @if (ViewBag.status == "OK")
-    {
-    <div class="alert alert-success">
-        @ViewBag.message
-    </div>
-    }
-    else if (ViewBag.status == "Error")
-    {
-    <div class="alert alert-danger">
-        @ViewBag.message
-    </div>
-    }
-</form>
+</section>

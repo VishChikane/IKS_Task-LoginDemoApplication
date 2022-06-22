@@ -3,47 +3,58 @@
     ViewData["Title"] = "EmployeeRegister";
 }
 
-<h1>Register Employee</h1>
+<section class="vh-80" style="font-family:'Times New Roman', Times, serif">
+    <div class="container py-4 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                    <div class="card-body p-4 text-center">
 
-<hr />
+                        <h3 class="mb-5">Register New Employee</h3>
 
-<form method="post" class="border p-3 m-3 bg-light">
-    <div class="form-group">
-        <label for="UserName">User Name</label>
-        <input type="text" class="form-control" asp-for="UserName" />
-    </div>
-    <div class="form-group">
-        <label for="Email">Email</label>
-        <input type="text" class="form-control" asp-for="Email" />
-    </div>
-    <div class="form-group">
-        <label for="Password">Password</label>
-        <input type="text" class="form-control" asp-for="Password" />
-    </div>
-    <div class="form-group">
-        <label for="GivenName">Given Name</label>
-        <input type="text" class="form-control" asp-for="GivenName" placeholder="First Name" />
-    </div>
-    <div class="form-group">
-        <label for="Surname">Surname</label>
-        <input type="text" class="form-control" asp-for="Surname" placeholder="Last Name" />
-    </div>
-    <div class="form-group">
-        <label for="Role">Role</label>
-        <input type="text" class="form-control" asp-for="Role" placeholder="DEVELOPER/ANALYST/PRINCIPAL" />
-    </div>
-    <input type="submit" value="Login" class="btn btn-primary" />
-    <hr />
-    @if (ViewBag.status == "OK")
-    {
-        <div class="alert alert-success">
-            @ViewBag.message
+                        <form method="post" >
+                            <div class="form-group">
+                                @*<label for="UserName">User Name</label>*@
+                                <input type="text" class="form-control" asp-for="UserName" placeholder="Enter UserName" />
+                            </div>
+                            <div class="form-group">
+                                @*<label for="Email">Email</label>*@
+                                <input type="email" class="form-control" asp-for="Email" placeholder="Enter Email" />
+                            </div>
+                            <div class="form-group">
+                                @*<label for="Password">Password</label>*@
+                                <input type="password" class="form-control" asp-for="Password" placeholder="Enter Password" />
+                            </div>
+                            <div class="form-group">
+                                @*<label for="GivenName">Given Name</label>*@
+                                <input type="text" class="form-control" asp-for="GivenName" placeholder="Enter First Name" />
+                            </div>
+                            <div class="form-group">
+                                @*<label for="Surname">Surname</label>*@
+                                <input type="text" class="form-control" asp-for="Surname" placeholder="Enter Last Name" />
+                            </div>
+                            <div class="form-group">
+                                @*<label for="Role">Role</label>*@
+                                <input type="text" class="form-control" asp-for="Role" placeholder="Enter Role [Dev/Ana/Pri/Lead]" />
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                            <hr />
+                            @if (ViewBag.status == "OK")
+                            {
+                                <div class="alert alert-success">
+                                    @ViewBag.message
+                                </div>
+                            }
+                            else if (ViewBag.status == "Error")
+                            {
+                                <div class="alert alert-danger">
+                                    @ViewBag.message
+                                </div>
+                            }
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-    }
-    else if (ViewBag.status == "Error")
-    {
-        <div class="alert alert-danger">
-            @ViewBag.message
-        </div>
-    }
-</form>
+    </div>
+</section>

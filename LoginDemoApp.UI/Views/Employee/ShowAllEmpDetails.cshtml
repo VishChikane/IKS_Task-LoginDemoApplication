@@ -3,17 +3,29 @@
     ViewData["Title"] = "ShowAllEmpDetails";
 }
 
-<h1>Emp Details</h1>
-<hr />
-<div class="container row p-0 m-0">
-    <div class="col-12 border p-3 mt-3">
-        <table class="table table-hover table-dark">
-            <thead class="table table-bordered table-striped text-center">
-                <tr class="table-secondary">
-                    <th>EmpId</th>
-                    <th>FirstName</th>
-                    <th>LastName</th>
-                    <th>UserName</th>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="bg-light p-2">
+        <table id="example" class="display table-hover " style="width:100%">
+            <thead>
+                <tr>
+                    <th>Emp Id</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>User Name</th>
                     <th>Email</th>
                     <th>Password</th>
                     <th>Role</th>
@@ -21,23 +33,62 @@
                     <th>Delete</th>
                 </tr>
             </thead>
-            <tbody class="table table-bordered table-striped">
+            <tbody>
                 @foreach (var item in Model)
                 {
-                <tr class="table-secondary">
-                    <td>@item.EmpId</td>
-                    <td>@item.GivenName</td>
-                    <td>@item.Surname</td>
-                    <td>@item.UserName</td>
-                    <td>@item.Email</td>
-                    <td>@item.Password</td>
-                    <td>@item.Role</td>
-                    <td><a asp-action="UpdateUserDetails" asp-controller="Employee" asp-route-EmpId="@item.EmpId">Edit-User</a></td>
-                    <td><a asp-action="DeleteUserDetails" asp-controller="Employee" asp-route-EmpId="@item.EmpId">Delete-User</a></td>
-                </tr>
+                    <tr>
+                        <td>@item.EmpId</td>
+                        <td>@item.GivenName</td>
+                        <td>@item.Surname</td>
+                        <td>@item.UserName</td>
+                        <td>@item.Email</td>
+                        <td>@item.Password</td>
+                        <td>@item.Role</td>
+                        <td><button class="btn btn-outline-success"><a asp-action="EmployeeUpdate" asp-controller="Employee" asp-route-EmpId="@item.EmpId">Edit</a></button></td>
+                        <td><button class="btn btn-outline-danger"><a asp-action="EmployeeDelete" asp-controller="Employee" asp-route-EmpId="@item.EmpId">Delete</a></button></td>
+                    </tr>
                 }
             </tbody>
         </table>
-
     </div>
-</div>
+</body>
+
+</html>
+
+
+@*<div class="container row p-0 m-0">
+        <div class="col-12 border p-3 mt-3">
+            <table id="example" class="table table-hover table-dark display">
+                <thead class="table table-bordered table-striped text-center">
+                    <tr class="table-secondary">
+                        <th>Emp Id</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>User Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Role</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="table table-bordered table-striped">
+                    @foreach (var item in Model)
+                    {
+                        <tr class="table-secondary">
+                            <td>@item.EmpId</td>
+                            <td>@item.GivenName</td>
+                            <td>@item.Surname</td>
+                            <td>@item.UserName</td>
+                            <td>@item.Email</td>
+                            <td>@item.Password</td>
+                            <td>@item.Role</td>
+                            <td><button class="btn btn-outline-success"><a asp-action="EmployeeUpdate" asp-controller="Employee" asp-route-EmpId="@item.EmpId">Edit</a></button></td>
+                            <td><button class="btn btn-outline-danger"><a asp-action="EmployeeDelete" asp-controller="Employee" asp-route-EmpId="@item.EmpId">Delete</a></button></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
+    </div>*@

@@ -54,24 +54,31 @@ namespace LoginDemoApp.UI.Controllers
         [HttpPost]
         public async Task<IActionResult> EmployeeLogin(EmployeeModel empModel)
         {
-            using (HttpClient client = new HttpClient())
+            if(empModel.Email == null || empModel.Password == null)
             {
-                StringContent content = new StringContent(JsonConvert.SerializeObject(empModel), Encoding.UTF8, "application/json");
-                string endpoint = _configuration["WebApiBaseUrl"] + "Employee/Login";
-                using (var response = await client.PostAsync(endpoint, content))
+                ViewBag.message = "All fields are mandatory";
+            }
+            else
+            {
+                using (HttpClient client = new HttpClient())
                 {
-                    if (response.StatusCode == HttpStatusCode.OK)
+                    StringContent content = new StringContent(JsonConvert.SerializeObject(empModel), Encoding.UTF8, "application/json");
+                    string endpoint = _configuration["WebApiBaseUrl"] + "Employee/Login";
+                    using (var response = await client.PostAsync(endpoint, content))
                     {
-                        var result = await response.Content.ReadAsStringAsync();
-                        var emp = JsonConvert.DeserializeObject<EmployeeModel>(result);
-                        ViewBag.status = "OK";
-                        ViewBag.message = "Congratulation ..! "+emp.GivenName+" login as a "+emp.Role+" ...!";
-                        //return RedirectToAction("Index", "Home");
-                    }
-                    else
-                    {
-                        ViewBag.status = "Error";
-                        ViewBag.message = "Wrong Credentails!";
+                        if (response.StatusCode == HttpStatusCode.OK)
+                        {
+                            var result = await response.Content.ReadAsStringAsync();
+                            var emp = JsonConvert.DeserializeObject<EmployeeModel>(result);
+                            ViewBag.status = "OK";
+                            ViewBag.message = "Congratulation.!"+ emp.GivenName + " "+emp.Surname+ " ["+emp.Role +"]";
+                            //return RedirectToAction("Index", "Home");
+                        }
+                        else
+                        {
+                            ViewBag.status = "Error";
+                            ViewBag.message = "Wrong Credentails!";
+                        }
                     }
                 }
             }
@@ -86,22 +93,126 @@ namespace LoginDemoApp.UI.Controllers
         [HttpPost]
         public async Task<IActionResult> EmployeeRegister(EmployeeModel emp)
         {
-            using(HttpClient client = new HttpClient())
+            if (emp.Email == null || emp.Password == null || emp.GivenName == null || emp.Surname == null || emp.UserName == null)
             {
-                StringContent content = new StringContent(JsonConvert.SerializeObject(emp), Encoding.UTF8, "application/json");
-                string endPoint = _configuration["WebApiBaseUrl"] + "Employee/Register";
-                using(var response = await client.PostAsync(endPoint, content))
+                ViewBag.message = "All fields are mandatory";
+            }
+            else
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    StringContent content = new StringContent(JsonConvert.SerializeObject(emp), Encoding.UTF8, "application/json");
+                    string endPoint = _configuration["WebApiBaseUrl"] + "Employee/Register";
+                    using (var response = await client.PostAsync(endPoint, content))
+                    {
+                        if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                        {
+                            var result = await response.Content.ReadAsStringAsync();
+                            ViewBag.status = "OK";
+                            ViewBag.message = "Congratulation ..! " + result;
+                        }
+                        else
+                        {
+                            ViewBag.status = "Error";
+                            ViewBag.message = "Wrong Inputs!";
+                        }
+                    }
+                }
+            }
+            return View();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> EmployeeUpdate(int empId)
+        {
+            ViewBag.message = null;
+            using (HttpClient client = new HttpClient())
+            {
+                //StringContent content = new StringContent(JsonConvert.SerializeObject(emp), Encoding.UTF8, "application/json");
+                string endPoint = _configuration["WebApiBaseUrl"] + "Employee/SelectEmpById?EmpId="+empId;
+                using (var response = await client.GetAsync(endPoint))
                 {
                     if (response.StatusCode == System.Net.HttpStatusCode.OK)
                     {
                         var result = await response.Content.ReadAsStringAsync();
+                        var emp = JsonConvert.DeserializeObject<EmployeeModel>(result);
+                        return View(emp);
+                    }
+                }
+            }
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EmployeeUpdate(EmployeeModel emp)
+        {
+            if (emp.Email == null || emp.Password == null || emp.GivenName == null || emp.Surname == null || emp.UserName == null)
+            {
+                ViewBag.message = "All fields are mandatory";
+            }
+            else
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    StringContent content = new StringContent(JsonConvert.SerializeObject(emp), Encoding.UTF8, "application/json");
+                    string endPoint = _configuration["WebApiBaseUrl"] + "Employee/Update?empId="+emp.EmpId;
+                    using (var response = await client.PutAsync(endPoint, content))
+                    {
+                        if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                        {
+                            var result = await response.Content.ReadAsStringAsync();
+                            ViewBag.status = "OK";
+                            ViewBag.message = "Congratulation ..! Update Successfully Done ..!";
+                            return RedirectToAction("ShowAllEmpDetails", "Employee");
+                        }
+                        else
+                        {
+                            ViewBag.status = "Error";
+                            ViewBag.message = "Wrong Inputs!";
+                        }
+                    }
+                }
+            }
+            return View();
+        }
+
+        public async Task<IActionResult> EmployeeDelete(int empId)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                string endPoint = _configuration["WebApiBaseUrl"] + "Employee/SelectEmpById?EmpId=" + empId;
+                using (var response = await client.GetAsync(endPoint))
+                {
+                    if (response.StatusCode == HttpStatusCode.OK)
+                    {
+                        var result = await response.Content.ReadAsStringAsync();
+                        var empModel = JsonConvert.DeserializeObject<EmployeeModel>(result);
+                        return View(empModel);
+                    }
+                }
+            }
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> EmployeeDelete(EmployeeModel deleteEmp)
+        {
+            ViewBag.status = "";
+            using (HttpClient client = new HttpClient())
+            {
+                string endPoint = _configuration["WebApiBaseUrl"] + "Employee/Delete?EmpId=" + deleteEmp.EmpId;
+                using (var response = await client.DeleteAsync(endPoint))
+                {
+                    if (response.StatusCode == HttpStatusCode.OK)
+                    {
                         ViewBag.status = "OK";
-                        ViewBag.message = "Congratulation ..! "+ result;
+                        ViewBag.message = "Employee Deleted Succesfully ...!";
+                        return RedirectToAction("ShowAllEmpDetails", "Employee");
                     }
                     else
                     {
                         ViewBag.status = "Error";
-                        ViewBag.message = "Wrong Inputs!";
+                        ViewBag.message = "Sorry, Employee Delete Failed ...!";
                     }
                 }
             }

@@ -10,5 +10,8 @@ namespace LoginDemoApp.Data.Repository
         public List<EmployeeModel> SelectEmployees();
         public EmployeeModel Login(EmployeeModel emp);
         string Register(EmployeeModel emp);
+        EmployeeModel SelectEmpById(int empId);
+        string Update(EmployeeModel employee);
+        string Delete(int empId);
     }
 }

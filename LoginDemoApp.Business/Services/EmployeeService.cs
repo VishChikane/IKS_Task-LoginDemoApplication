@@ -28,5 +28,20 @@ namespace LoginDemoApp.Business.Services
         {
             return _employee.Register(emp);
         }
+
+        public object SelectEmpById(int empId)
+        {
+            return _employee.SelectEmpById(empId);
+        }
+
+        public object Update(EmployeeModel employee)
+        {
+            return _employee.Update(employee);
+        }
+
+        public object Delete(int empId)
+        {
+            return _employee.Delete(empId);
+        }
     }
 }

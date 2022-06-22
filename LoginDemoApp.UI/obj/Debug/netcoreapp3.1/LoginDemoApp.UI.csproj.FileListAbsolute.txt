@@ -341,3 +341,5 @@ E:\IKS_Training\TaskApplication\LoginDemoApplication\LoginDemoApp.UI\obj\Debug\n
 E:\IKS_Training\TaskApplication\LoginDemoApplication\LoginDemoApp.UI\obj\Debug\netcoreapp3.1\LoginDemoApp.UI.pdb
 E:\IKS_Training\TaskApplication\LoginDemoApplication\LoginDemoApp.UI\obj\Debug\netcoreapp3.1\LoginDemoApp.UI.genruntimeconfig.cache
 E:\IKS_Training\TaskApplication\LoginDemoApplication\LoginDemoApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\Employee\EmployeeRegister.cshtml.g.cs
+E:\IKS_Training\TaskApplication\LoginDemoApplication\LoginDemoApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\Employee\EmployeeUpdate.cshtml.g.cs
+E:\IKS_Training\TaskApplication\LoginDemoApplication\LoginDemoApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\Employee\EmployeeDelete.cshtml.g.cs

@@ -36,5 +36,23 @@ namespace LoginDemoApp.API.Controllers
         {
             return Ok(_employeeService.Register(emp));
         }
+
+        [HttpGet("SelectEmpById")]
+        public IActionResult SelectEmpById(int empId)
+        {
+            return Ok(_employeeService.SelectEmpById(empId));
+        }
+
+        [HttpPut("Update")]
+        public IActionResult Update(EmployeeModel employee)
+        {
+            return Ok(_employeeService.Update(employee));
+        }
+
+        [HttpDelete("Delete")]
+        public IActionResult Delete(int empId)
+        {
+            return Ok(_employeeService.Delete(empId));
+        }
     }
 }
